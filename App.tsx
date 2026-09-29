@@ -1,18 +1,15 @@
-import { View, Text, StyleSheet,Pressable } from "react-native";
 import Header from "./components/Header";
 import BookCard from "./components/BookCard";
+import CategoryChips from "./components/CategoryChips";
+import {Text, View, StyleSheet} from 'react-native'
+import BookGrid from "./components/BookGrid";
+import Badge from "./components/Badge";
+import FloatingCartButton from "./components/FloatingCartButton";
 
+export default function app(){
+  return(
+ <View style ={{flex:1}}>
+  <FloatingCartButton />
+ </View>
 
-export default function App(){
-return(
-  <View style={styles.container}>
-  <BookCard />
-  </View>
 )}
-
-const styles= StyleSheet.create({
-  container:{
-    flex:1,
-    justifyContent:'center'
-  }
-})
